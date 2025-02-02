@@ -1,0 +1,12 @@
+What is the purpose of AMASK[6:0]? 
+A: the purpose of AMASK is used to avoid the effect from the unrelated bits. because we used or2b1 gates for building it in our comparator, which means
+    it would force the bits we don't care to alwaays output 1 as the compare result, which means they always match, we just need to compare other bits
+
+What exactly does busmerge.v do?
+A: merge the content of packet for later compare checking
+
+What do the comp8 modules do in this schematic? 
+A: using comp8 to build comparator and compare the packet content
+
+What is the purpose of dual9Bmem in dropfifo.sch?
+A： holding the value of fifo
